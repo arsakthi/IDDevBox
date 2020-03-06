@@ -1,0 +1,29 @@
+---
+# build-servers.yml
+# - name: Initial Prep
+#   hosts: devbox
+#
+#   tasks:
+#     - name: Install basic utilities
+#       yum: name={{ item }} state=latest
+#       # ignore_errors: true
+#       with_items:
+#         - wget
+
+
+- hosts: devbox
+  #Define user and password variables
+  vars:
+    # created with:
+    # python -c 'import crypt; print crypt.crypt("guest123", "guest")'
+    password : deZglJ0UD./IQ
+    user : devbox
+  roles:
+    - common
+    - python
+    - users
+    - docker
+    - node
+    - pycharm
+    - vagrant
+    - openconnect
