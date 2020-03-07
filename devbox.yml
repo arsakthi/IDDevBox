@@ -11,7 +11,7 @@
 #         - wget
 
 
-- hosts: devbox
+- hosts: all
   #Define user and password variables
   vars:
     # created with:
@@ -19,11 +19,5 @@
     password : deZglJ0UD./IQ
     user : devbox
   roles:
-    - common
-    - python
-    - users
     - docker
-    - node
-    - pycharm
-    - vagrant
-    - openconnect
+
