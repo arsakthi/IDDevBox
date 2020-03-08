@@ -11,7 +11,7 @@
 #         - wget
 
 
-- hosts: all
+- hosts: localhost
   #Define user and password variables
   vars:
     # created with:
