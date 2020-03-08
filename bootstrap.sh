@@ -31,7 +31,7 @@ pip install ansible
 
 # Run Playbook
 echo "Running DevBox Setup Playbook"
-ansible-playbook -i hosts devbox.yml
+ansible-playbook devbox.yml
 echo ""
 
 # Done
